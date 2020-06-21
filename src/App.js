@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './components/MenuComponent'
 //import logo from './logo.svg';
@@ -6,7 +6,7 @@ import './App.css';
 //import ReactDOM from 'react-dom';
 import  {DISHES} from './shared/dishes'
 import { Navbar, NavbarBrand } from 'reactstrap';
-class App extends Component{
+class App extends React.Component{
  constructor(props)
  {
    super(props);
@@ -21,10 +21,11 @@ class App extends Component{
     <div className="App">
      <Navbar dark color='primary'>
      <div className='container'>
-       <NavbarBrand href='/'> Restaurant Can Fusion</NavbarBrand>
+       <NavbarBrand href='/'> Restaurant Con Fusion</NavbarBrand>
      </div>
      </Navbar>
      <Menu dishes={this.state.dishes}/>
+     
     </div>
   );
   }
